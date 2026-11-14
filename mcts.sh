@@ -43,7 +43,7 @@ cleanup() {
   fi
   if (( ! HEADLESS )); then
     tput cnorm 2>/dev/null || true
-    clear 2>/dev/null || true
+    echo 2>/dev/null || true
   fi
   rm -rf "$TMPDIR_RUN"
 }
